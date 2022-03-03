@@ -16,7 +16,7 @@ export default function Home() {
           <div className="col-sm-12 col-md-3">
             <MarketPairs />
           </div>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-9">
             <ThemeConsumer>
               {({ data }) => {
                 return data.theme === 'light' ? (
@@ -28,14 +28,14 @@ export default function Home() {
             </ThemeConsumer>
             <MarketTrade />
           </div>
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <OrderBook />
             <MarketHistory />
-          </div>
-          <div className="col-md-3">
+          </div> */}
+          {/* <div className="col-md-3">
             <MarketNews />
-          </div>
-          <div className="col-md-9">
+          </div> */}
+          <div className="col-md-12">
             <HistoryOrder />
           </div>
         </div>
